@@ -1,4 +1,7 @@
 import React, { useRef } from "react";
+import codetoken from "../assets/images/project_screenshots/codetoken.png";
+import crowdfunding from "../assets/images/project_screenshots/crowdfunding.png";
+import stakingdapp from "../assets/images/project_screenshots/stakingdapp.png";
 
 const Projects = () => {
   const scrollRef = useRef(null);
@@ -6,15 +9,24 @@ const Projects = () => {
   const projects = [
     {
       title: "Staking DAPP",
-      description: "Project description for Staking DAPP.",
+      image: stakingdapp,
+      description:
+        "A decentralized application where users can stake tokens and earn rewards based on an annual percentage rate (APR). Built with Solidity, React, and Tailwind CSS.",
+      url: "https://staking-dapp-frontend-nine.vercel.app",
     },
     {
       title: "Token Faucet",
-      description: "Project description for Token Faucet.",
+      image: codetoken,
+      description:
+        "A dApp for dispensing testnet tokens to users, featuring wallet connection and token claim functionality. Developed using React and ethers.js.",
+      url: "https://codetoken-faucet.vercel.app/",
     },
     {
-      title: "Blogging Platform",
-      description: "Project description for Blogging Platform.",
+      title: "Crowdy",
+      image: crowdfunding,
+      description:
+        "A decentralized crowdfunding platform that allows users to create and fund campaigns transparently. Built with Solidity, Express.js, and React.",
+      url: "https://crowdfunding-dapp-khaki.vercel.app/",
     },
   ];
 
@@ -82,7 +94,7 @@ const Projects = () => {
                 className="h-full w-full sm:w-80 flex-shrink-0 bg-white p-8 rounded-lg shadow-lg snap-center"
               >
                 <img
-                  src="https://via.placeholder.com/400"
+                  src={project.image}
                   alt={`Project ${index + 1}`}
                   className="h-40 rounded-lg mb-4 object-cover object-center w-full"
                 />
@@ -92,24 +104,32 @@ const Projects = () => {
                 <p className="leading-relaxed text-base mb-4">
                   {project.description}
                 </p>
-                <a
-                  href="#"
-                  className="text-indigo-500 inline-flex items-center mt-3"
-                >
-                  Learn More
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                <div className="flex justify-between p-2">
+                  <a
+                    href="#"
+                    className="text-indigo-500 inline-flex items-center mt-3"
                   >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a>
+                    Learn More
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      className="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                  <a
+                    href={project.url}
+                    className="text-gray-900 font-bold inline-flex items-center mt-3"
+                  >
+                    Live site
+                  </a>
+                </div>
               </div>
             ))}
           </div>
