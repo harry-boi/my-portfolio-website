@@ -5,6 +5,7 @@ import nodejslogo from "../assets/images/nodejslogo.png";
 import soliditylogo from "../assets/images/soliditylogo.png";
 import foundrylogo from "../assets/images/foundrylogo.png";
 import etherjslogo from "../assets/images/etherjslogo.png";
+import expressjslogo from "../assets/images/expressjs.png";
 
 const SkillsSection = () => {
   const skills = [
@@ -14,6 +15,7 @@ const SkillsSection = () => {
     { name: "Node.js", icon: nodejslogo },
     { name: "Foundry", icon: foundrylogo },
     { name: "Ethers.js", icon: etherjslogo },
+    { name: "Express Js", icon: expressjslogo },
   ];
 
   return (
