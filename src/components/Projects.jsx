@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import codetoken from "../assets/images/project_screenshots/codetoken.png";
 import crowdfunding from "../assets/images/project_screenshots/crowdfunding.png";
 import stakingdapp from "../assets/images/project_screenshots/stakingdapp.png";
+import portfoliotracker from "../assets/images/project_screenshots/portfoliotracker.png";
 
 const Projects = () => {
   const scrollRef = useRef(null);
@@ -9,6 +10,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Staking DAPP",
+      github: "https://github.com/harry-boi/staking-dapp.git",
       image: stakingdapp,
       description:
         "A decentralized application where users can stake tokens and earn rewards based on an annual percentage rate (APR). Built with Solidity, React, and Tailwind CSS.",
@@ -16,6 +18,7 @@ const Projects = () => {
     },
     {
       title: "Token Faucet",
+      github: "https://github.com/harry-boi/faucet-for-erc20-token.git",
       image: codetoken,
       description:
         "A dApp for dispensing testnet tokens to users, featuring wallet connection and token claim functionality. Developed using React and ethers.js.",
@@ -23,10 +26,19 @@ const Projects = () => {
     },
     {
       title: "Crowdy",
+      github: "https://github.com/harry-boi/crowdfunding-dapp.git",
       image: crowdfunding,
       description:
         "A decentralized crowdfunding platform that allows users to create and fund campaigns transparently. Built with Solidity, Express.js, and React.",
       url: "https://crowdfunding-dapp-khaki.vercel.app/",
+    },
+    {
+      title: "Defi Portfolio Tracker",
+      github: "https://github.com/harry-boi/defi-portfolio-tracker.git",
+      image: portfoliotracker,
+      description:
+        "A portfolio tracker that allows users to view their Ethereum wallet balance in Ether and USD, track 30-day profit/loss, and monitor ERC tokens held in the wallet. Built with React, Vite, and Tailwind CSS.",
+      url: "https://defi-portfolio-tracker-f28uils3g-alpha-nums-projects.vercel.app/",
     },
   ];
 
@@ -106,8 +118,9 @@ const Projects = () => {
                 </p>
                 <div className="flex justify-between p-2">
                   <a
-                    href="#"
+                    href={project.github}
                     className="text-indigo-500 inline-flex items-center mt-3"
+                    target="_blank"
                   >
                     Learn More
                     <svg
@@ -125,6 +138,7 @@ const Projects = () => {
                   </a>
                   <a
                     href={project.url}
+                    target="_blank"
                     className="text-gray-900 font-bold inline-flex items-center mt-3"
                   >
                     Live site

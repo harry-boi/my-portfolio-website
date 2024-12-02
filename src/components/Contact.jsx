@@ -24,7 +24,7 @@ const ContactSection = () => {
         <div className="mt-12 flex justify-center space-x-6">
           {/* Social Media Links */}
           <a
-            href="https://twitter.com"
+            href="https://x.com/harry_boy01"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-indigo-500"
@@ -39,7 +39,7 @@ const ContactSection = () => {
             </svg>
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/harry-dan-13b389275/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-indigo-500"
@@ -54,7 +54,7 @@ const ContactSection = () => {
             </svg>
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/harry-boi"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-indigo-500"
