@@ -12,7 +12,7 @@ const Header = ({ toggleDarkMode, isDarkMode }) => {
     <>
       {/* Desktop Navbar */}
       <div className="justify-around dark:bg-gray-950 m-10 p-6 hidden md:flex">
-        <div className="text-3xl flex gap-2 font-bold text-gray-700 dark:text-gray-100">
+        <div className="text-3xl fleax gap-2 font-bold text-gray-700 dark:text-gray-100">
           Harryboi
         </div>
 

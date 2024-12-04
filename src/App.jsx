@@ -24,9 +24,13 @@ function App() {
     <div className="dark:bg-gray-950">
       <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
       <HeroSection />
+      <section id="skills">
+        <SkillsSection />
+      </section>
       <section id="about">
         <AboutMe />
       </section>
+
       <section id="projects">
         <Projects />
       </section>
