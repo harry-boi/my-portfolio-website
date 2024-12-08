@@ -21,7 +21,7 @@ const HeroSection = () => {
             <a
               href="/resume.pdf"
               download="resume.pdf"
-              className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+              className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg sm:py-2 sm:px-4 sm:text-base md:py-2 md:px-6 md:text-lg"
             >
               Resume
             </a>
