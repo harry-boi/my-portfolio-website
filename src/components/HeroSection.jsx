@@ -17,15 +17,15 @@ const HeroSection = () => {
             pushing the boundaries of technology.
           </p>
 
-          <div className="flex justify-center">
+          <div className="flex space-y-3 space-x-0 flex-col md:flex-row md:space-y-0 md:space-x-3 justify-center">
             <a
               href="/resume.pdf"
               download="resume.pdf"
-              className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg sm:py-2 sm:px-4 sm:text-base md:py-2 md:px-6 md:text-lg"
+              className="text-white bg-indigo-500 border-0 py-3 px-8 rounded-lg text-lg font-semibold shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-indigo-600 focus:outline-none focus:ring-4 focus:ring-indigo-400"
             >
               Resume
             </a>
-            <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+            <button className="text-gray-700 bg-gray-100 border-0 py-3 px-8 rounded-lg text-lg font-semibold shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-300">
               Hire me On Contra
             </button>
           </div>
