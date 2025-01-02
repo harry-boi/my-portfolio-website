@@ -39,7 +39,7 @@ const ContactSection = () => {
             </svg>
           </a>
           <a
-            href="https://www.linkedin.com/in/harry-dan-13b389275/"
+            href="https://www.linkedin.com/in/harry-dan-80749b1b7/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-indigo-500"

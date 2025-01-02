@@ -38,7 +38,7 @@ const Projects = () => {
       image: portfoliotracker,
       description:
         "A portfolio tracker that allows users to view their Ethereum wallet balance in Ether and USD, track 30-day profit/loss, and monitor ERC tokens held in the wallet. Built with React, Vite, and Tailwind CSS.",
-      url: "https://defi-portfolio-tracker-f28uils3g-alpha-nums-projects.vercel.app/",
+      url: "https://defi-portfolio-tracker-psi.vercel.app/",
     },
   ];
 
