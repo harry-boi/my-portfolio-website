@@ -11,16 +11,16 @@ const HeroSection = () => {
             <span className="dark:text-orange-400"> Web3 Developer</span>
           </h1>
           <p className="mb-8 leading-relaxed dark:text-gray-400">
-            With over 3 years of experience in software development, I
-            specialize in crafting decentralized applications and innovative
-            Web3 solutions. I thrive on continuous learning, collaboration, and
-            pushing the boundaries of technology.
+            With over 3 years of experience in traditional software development,
+            I now specialize in crafting decentralized applications and
+            innovative Web3 solutions.
           </p>
 
           <div className="flex space-y-3 space-x-0 flex-col md:flex-row md:space-y-0 md:space-x-3 justify-center">
             <a
               href="/resume.pdf"
-              download="resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-white bg-indigo-500 border-0 py-3 px-8 rounded-lg text-lg font-semibold shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:bg-indigo-600 focus:outline-none focus:ring-4 focus:ring-indigo-400"
             >
               Resume
